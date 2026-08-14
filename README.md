@@ -6,25 +6,34 @@ A production-oriented account transaction system built with **Java, Spring Boot,
 
 ---
 
-## ✨ Features
+```text
+با سلام
+پیشاپیش از اینکه فایل توضیحات طولانی ای وجود داره عذرخواهی می کنم
+در ادامه توضیحات دقیق تر می باشد اما به طور مختصر
+1) تمامی عملیات ها صحیح هستن و یا انجام می شود یا کلا انجام نمی شود
+2) برای درخواست های تکراری و شناسه تراکنش تکراری به طور پیش فرض خطا گزارش می شود که
+این عملیات قبلا با این شماره تراکنش انجام شده است
+3) حساب مبدا و مقصد نباید یکی باشند
+4) از معماری شش ضلعی استفاده کردم برای تست پذیری بالا و همچنین
+DDD
+برای جدا نگه داشتن بیزنس از زیرساخت
+5) برای مدیریت کردن تعداد زیاد درخواست ها از پترن
+Queue + Worker
+استفاده کردم و دیفالت پروژه رو 4 تا وورکر می باشد
+6) کار های بیشتری برای بهبود میشد انجام داد از جمله 
+async
+کردن درخواست ها ولی من به صورت
+sync
+پیاده سازی کردم
 
-- 💰 Account creation
-- ➕ Account deposit
-- ➖ Account debit
-- 🔄 Account-to-account transfer
-- 🔐 Idempotent financial operations
-- 🧵 Virtual-thread based workers
-- 📦 Bounded operation queue
-- 🔒 PostgreSQL pessimistic locking
-- 🛡️ Concurrent balance protection
-- 📡 Domain events
-- 🧱 Hexagonal / Ports & Adapters architecture
-- 🧪 Unit tests
-- 🧪 Integration tests
-- 🐘 PostgreSQL Testcontainers
-- 🔴 Redis Testcontainers
-- 🚀 k6 load testing
-- ⚡ High-concurrency testing
+
+تمامی بیزنس به صورت درخواست های همزمان و تعداد زیاد تست شده اند و اپلیکیشن
+atomic, consistent, correct, idempotent, concurrent
+می باشد
+پایین تر توضیحات دقیق درمورد لود تست داده شده است که بعد از اجرا کردن اپلیکیشن می توانید تست هارا اجرا کنید
+تقریبا کل پروژه دارای تست می باشد از جمله
+Unit Test, Integration Test, Load Test, Correctness Test
+```
 
 ---
 
