@@ -383,8 +383,7 @@ The project follows a domain-centric architecture inspired by **Hexagonal Archit
                                     │
                                     ▼
                          ┌─────────────────────┐
-                         │ Application Layer  │
-                         │    / Use Cases     │
+                         │Application Delivery │
                          └──────────┬──────────┘
                                     │
                                     ▼
@@ -406,8 +405,8 @@ The project follows a domain-centric architecture inspired by **Hexagonal Archit
                                     │
                                     ▼
                          ┌─────────────────────┐
-                         │       Domain        │
-                         │ Account / Money     │
+                         │       Use Case      │
+                         │         DDD         │
                          └──────────┬──────────┘
                                     │
                                     ▼
