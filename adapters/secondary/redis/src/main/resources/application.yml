@@ -1,0 +1,6 @@
+spring:
+  data:
+    redis:
+      host: tms-redis
+      port: 6379
+      timeout: 2s
